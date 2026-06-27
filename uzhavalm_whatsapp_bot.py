@@ -1,5 +1,5 @@
 """
-UZHAVALM WHATSAPP BOT
+UZHAVALAM WHATSAPP BOT
 ======================
 Handles: Welcome -> Plan selection -> Family size -> Price -> Payment -> FAQ
 Tech: Flask + WhatsApp Cloud API (Meta) + Google Sheets (optional)
@@ -81,7 +81,7 @@ def send_message(to, text):
 
 
 def notify_admin(text):
-    send_message(ADMIN_PHONE, f"🔔 New Uzhavalm order:\n{text}")
+    send_message(ADMIN_PHONE, f"🔔 New Uzhavalam order:\n{text}")
 
 
 # ── Main conversation logic ──
@@ -110,7 +110,7 @@ def handle_message(sender, text):
     # ── Step: start ──
     if state["step"] == "start" or "hi" in text or "hello" in text:
         send_message(sender,
-            "🌾 *Welcome to Uzhavalm!* உழவளம்\n\n"
+            "🌾 *Welcome to Uzhavalam!* உழவளம்\n\n"
             "Fresh vegetables from Attur farmers, straight to your door 🥦\n\n"
             "Select your plan:\n"
             "1️⃣ 1 Day/Week\n"
